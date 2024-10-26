@@ -5,7 +5,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfi
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
-import { USER_AVATAR } from "../utils/constants";
+import { BG_URL, USER_AVATAR } from "../utils/constants";
 
 
 const Login = () => {
@@ -77,7 +77,7 @@ const Login = () => {
     <div>
       <Header/>
       <div className="absolute">
-          <img src="https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg" alt="bglogo"/>
+          <img src={BG_URL} className="w-screen" alt="bglogo"/>
       </div>
       <form onSubmit={(e)=>{e.preventDefault()}} className="w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-65">
         <h1 className="font-bold text-4xl py-4 mb-3">{isSignInForm ? "Sign In" : "Sign Up"}</h1>
