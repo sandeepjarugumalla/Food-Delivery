@@ -58,7 +58,7 @@ const Header = () => {
              
           </select>)}
         <button className="py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-sm" onClick={handleGptSearchClick}
-        >{ showGptSearch ? "Homepage" :"GPT Search"}</button>
+        >{ showGptSearch ? "Home Page": "GPT Search"}</button>
          <img className="w-12 h-13 p-2 " alt="usericon" src={user?.photoURL}/>
         <button onClick={handleSignOut} className="font-bold text-white">(SignOut)</button>
     </div>)}
